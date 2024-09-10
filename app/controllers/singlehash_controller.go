@@ -9,12 +9,9 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-func Ping(c *fiber.Ctx) error {
-
-	result := "ping"
-
-	return c.Status(http.StatusOK).JSON(responses.Response{Status: http.StatusOK, Success: true, Data: result})
-
+func verifyCustomHashPassword(userPassword, storedHash string) bool {
+	// TODO Implement your own hash verify method
+	return false
 }
 
 func Process(c *fiber.Ctx) error {
@@ -43,17 +40,9 @@ func Process(c *fiber.Ctx) error {
 	}
 }
 
-func verifyCustomHashPassword(userPassword, storedHash string) bool {
-	if len(storedHash) < 2 {
-		fmt.Println("Invalid stored hash. It must be at least 2 characters long.")
-		return false
-	}
-	// Extract salt
-	salt := ""
+func Ping(c *fiber.Ctx) error {
 
-	// Generate hash
-	testHash := salt + ""
+	result := "ping"
 
-	return testHash == storedHash
-
+	return c.Status(http.StatusOK).JSON(responses.Response{Status: http.StatusOK, Success: true, Data: result})
 }
