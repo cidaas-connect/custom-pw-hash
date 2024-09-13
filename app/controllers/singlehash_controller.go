@@ -26,8 +26,6 @@ func Process(c *fiber.Ctx) error {
 
 	if verifyCustomHashPassword(body.Password, body.PasswordVerification.PasswordHash) {
 		fmt.Println("Password verified successfully!")
-
-		// Create bcrypt hash
 		return c.Status(http.StatusOK).JSON(responses.Response{Status: http.StatusOK, Success: true, Data: &api.PasswordVerifiedData{
 			Verified: true,
 		}})
