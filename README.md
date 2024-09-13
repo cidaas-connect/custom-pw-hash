@@ -22,16 +22,6 @@ func verifyCustomHashPassword(userPassword, storedHash string) bool {
 }
 ```
 
-Push deinen code und versuche dich mit deinem User einzuloggen.
+## Test
 
-## Setup
-
-Wir haben 5 Branches mit CI/CD vorbereitet
-
-|Branchname|algorithmTypeId|
-|-----|-----|
-|1_custom_hash|CIDAAS_CONNECT_CUSTOM_HASH_1|
-|2_custom_hash|CIDAAS_CONNECT_CUSTOM_HASH_2|
-|3_custom_hash|CIDAAS_CONNECT_CUSTOM_HASH_3|
-|4_custom_hash|CIDAAS_CONNECT_CUSTOM_HASH_4|
-|5_custom_hash|CIDAAS_CONNECT_CUSTOM_HASH_5|
+got to /app/controllers and run the command `go test` to execute the testcase

@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"elisa-custom-hash-srv/pkg/configs"
-	"elisa-custom-hash-srv/pkg/routes"
+	"connect-custom-hash-srv/pkg/configs"
+	"connect-custom-hash-srv/pkg/routes"
 
 	"github.com/gofiber/fiber/v2"
 )

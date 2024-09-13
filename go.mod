@@ -1,4 +1,4 @@
-module elisa-custom-hash-srv
+module connect-custom-hash-srv
 
 go 1.18
 

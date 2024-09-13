@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"elisa-custom-hash-srv/app/controllers"
+	"connect-custom-hash-srv/app/controllers"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"

@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"elisa-custom-hash-srv/app/models/api"
-	"elisa-custom-hash-srv/app/models/responses"
+	"connect-custom-hash-srv/app/models/api"
+	"connect-custom-hash-srv/app/models/responses"
 	"fmt"
 	"net/http"
 
